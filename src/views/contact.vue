@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: "Contact",
+  name: "Summmary",
   data() {
     return {
     email: "jouer947@hotmail.fr"

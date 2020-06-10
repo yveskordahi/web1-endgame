@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
-import Contact from '../views/contact.vue'
+import Summary from '../views/contact.vue'
 
 Vue.use(VueRouter)
 
@@ -20,9 +20,9 @@ const routes = [
     component: Team
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
+    path: '/summary',
+    name: 'Summary',
+    component: Summary
   }
 ]
 
@@ -33,3 +33,4 @@ const router = new VueRouter({
 })
 
 export default router
+
