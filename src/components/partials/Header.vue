@@ -9,6 +9,7 @@
       <!-- .native signifie que l'on utilise l'evenement 'click' natif de javascript et pas l'evenement 'click' de vue -->
       <!-- 'isOpen = false' car je souhaite fermer mon menu quand on clique sur un lien -->
       <router-link @click.native="isOpen = false" to="/team">l'Équipe</router-link>
+       <router-link @click.native="isOpen = false" to="/contact">Contact</router-link>
     </div>
   </div>
 </template>

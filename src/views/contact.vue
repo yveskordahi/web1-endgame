@@ -1,0 +1,21 @@
+<template>
+  <div class="home">
+    Contact
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: "Contact",
+  data() {
+    return {
+    email: "jouer947@hotmail.fr"
+    }
+  }
+}
+</script>
+
+<style >
+
+</style>
