@@ -1,19 +1,12 @@
 <template>
-  <div class="team">
+  <div>
     
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      members: [
-        'Clément',
-        'Bastien'
-      ]
-    }
-  }
+
 }
 </script>
 

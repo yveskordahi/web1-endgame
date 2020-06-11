@@ -5,21 +5,21 @@
         <div class="FirstPart__content">
           <h1 class="FirstPart__title">La Grande Guerre</h1>
           <p class="FirstPart__subtitle">Des Hommes et des Femmes mobilisés pour une guerre totale au front comme à l'arrière</p>
-          <router-link class="Discover__btn" to="/FirstWorldWar">Découvrir</router-link>
+          <router-link class="Discover__btn" to="/FirstWorldWar">En savoir plus</router-link>
         </div>
       </div>
       <div class="summary__SecondPart">
         <div class="SecondPart__content">
           <h1 class="SecondPart__title">Une guerre d’anéantissement</h1>
           <p class="SecondPart__subtitle">Un bilan humain qui dépasse en horreur celui de la première guerre mondiale</p>
-          <router-link class="Discover__btn" to="/SecondWorldWar">Découvrir</router-link>
+          <router-link class="Discover__btn" to="/SecondWorldWar">En savoir plus</router-link>
         </div>
       </div>
     </div>
     <div class="navbar">
       <div class="navbar__items">
         <div class="items__archive">
-          <a class="items__link" href="">Archives</a>
+          <router-link class="items__link" to="/archives">Archives</router-link>
         </div>
         <div class="items__setting">
           <a class="items__link" href="">A propos</a>

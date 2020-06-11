@@ -4,7 +4,7 @@
         <video autoplay muted loop>
             <source src="../assets/Video/vid.mp4" type="video/mp4">
         </video>
-        <audio id="background_audio" autoplay="true" loop="loop" muted="true">
+        <audio id="background_audio" autoplay>
             <source src="../assets/Sound/WorldWar.mp3" type="audio/mp3">
             If you are reading this, it is because your browser does not support the audio element.
         </audio>
@@ -12,9 +12,9 @@
 
     <div class="video-overlay">
         <h1>Des hommes et des femmes au services de la France </h1>
-        <p>subtitle</p>
+        <p>Les deux plus grandes guerres de l'histoire causer la mort de millions de personnes, découvrez ici l'impact de ses pertes en France.</p>
         <router-link class="Discover__btn" to="/Summary">Découvrir</router-link>
-        <button class="sound__btn" v-on:click="mute()">1</button>
+        <button class="sound__btn" @click="toggle">1</button>
     </div>
   </div>
 </template>
@@ -24,13 +24,8 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-//   name: 'Home',
-//   components: {
-//     HelloWorld
-//   }
-// }
   methods: {
-    greet: function mute(){
+    toggle: function() {
       if(document.getElementById('background_audio').muted == false){
         document.getElementById('background_audio').muted = true;
       } else {
@@ -68,7 +63,17 @@ export default {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    animation: bg-color 2s ease 2s forwards;
+
+    @keyframes bg-color {
+      from {
+        background-color: rgba(0,0,0,0);
+      }
+
+      to {
+        background-color: rgba(0,0,0,0.7);
+      }
+    }
 }
 
     .video-container video{
@@ -94,10 +99,30 @@ export default {
     justify-content: center;
     color: #fff;
     flex-direction: column;
-    font-size: 1.5rem;
+    opacity: 0;
+    animation: opacity 2s ease 2s forwards;
+
+    @keyframes opacity {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
 
     h1 {
       margin: 0;
+      font-size: 38px;
+
+      @media screen and (max-width: 1400px) {
+      font-size: 30px;
+      }
+
+      @media screen and (max-width: 820px) {
+      font-size: 26px;
+      }
     }
 
     .Discover__btn {
@@ -132,6 +157,18 @@ p{
     margin-top: 10px;
     font-weight: 100;
     text-decoration: capitalize;
+    width: 50%;
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 1.4;
+
+    @media screen and (max-width: 1300px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 820px) {
+      font-size: 15px;
+    }
 }
 
 </style>

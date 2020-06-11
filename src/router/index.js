@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import FirstWorldWar from '../views/FirstWorldWar.vue'
 import Summary from '../views/summary.vue'
 import SecondWorldWar from '../views/SecondWorldWar.vue'
+import archives from '../views/archives.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/SecondWorldWar',
     name: 'SecondWorldWar',
     component: SecondWorldWar
+  },
+  {
+    path: '/archives',
+    name: 'archives',
+    component: archives
   }
 ]
 
