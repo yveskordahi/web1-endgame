@@ -1,13 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Team from '../views/Team.vue'
-import Summary from '../views/contact.vue'
+import FirstWorldWar from '../views/FirstWorldWar.vue'
+import Summary from '../views/summary.vue'
+import SecondWorldWar from '../views/SecondWorldWar.vue'
 
 Vue.use(VueRouter)
 
-// C'est dans la constante routes que vous définisez les différentes routes de votre projet
-// Chaque route doivent avoir au minimum un path et un component associé
 const routes = [
   {
     path: '/',
@@ -15,14 +14,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/team',
-    name: 'Team',
-    component: Team
+    path: '/FirstWorldWar',
+    name: 'FirstWorldWar',
+    component: FirstWorldWar
   },
   {
     path: '/summary',
     name: 'Summary',
     component: Summary
+  },
+  {
+    path: '/SecondWorldWar',
+    name: 'SecondWorldWar',
+    component: SecondWorldWar
   }
 ]
 

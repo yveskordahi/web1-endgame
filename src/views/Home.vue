@@ -11,13 +11,12 @@
     </div>
 
     <div class="video-overlay">
-        <h1>La France</h1>
-        <p>Subtitle</p>
-        <button><router-link to="/Summary">Découvrir</router-link></button>
-        <button class="sound__btn" onclick="mute()">1</button>
+        <h1>Des hommes et des femmes au services de la France </h1>
+        <p>subtitle</p>
+        <router-link class="Discover__btn" to="/Summary">Découvrir</router-link>
+        <button class="sound__btn" v-on:click="mute()">1</button>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -47,22 +46,21 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-}
 
-.video-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
+    .video-container{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
 
-.video-container:after{
+    .video-container:after{
     position: absolute;
     top: 0;
     left: 0;
@@ -73,18 +71,19 @@ export default {
     background-color: rgba(0,0,0,0.8);
 }
 
-.video-container video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 56.25vw;
-    min-width: 177.6vh;
-    min-height: 100vh;
-    transform: translate(-50%, -50%);
+    .video-container video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw;
+        min-width: 177.6vh;
+        min-height: 100vh;
+        transform: translate(-50%, -50%);
+    }
 }
 
-.video-overlay{
+.video-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,10 +95,30 @@ export default {
     color: #fff;
     flex-direction: column;
     font-size: 1.5rem;
-    text-transform: uppercase;
 
     h1 {
       margin: 0;
+    }
+
+    .Discover__btn {
+      display:inline-block;
+      border:0.1em solid #FFFFFF;
+      padding: 5px 17px;
+      border-radius:0.12em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-weight:300;
+      color:#FFFFFF;
+      text-align:center;
+      transition: all 0.2s;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .Discover__btn:hover{
+      color:#000000;
+      background-color:#FFFFFF;
     }
 
     .sound__btn {
