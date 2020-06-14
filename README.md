@@ -1,48 +1,15 @@
-# web1-endgame
+Projet de fin d'année:
 
-## Stack du projet
+Groupe 12:
 
-- Babel (es6 syntax)
-- Vue.js
-  - Vue Router
-- Sass
+Kordahi Yves-chabeli
+Pejic Andrija
+Valentin Sebastien
+Tong Xing
+Dubled Remy
 
-## Route
+Ce projet de fin d'année est consacré à la réalisation d'un webdoc, concernant les pertes humaines de la seconde
+guerre mondiale en France, ainsi que l'impact que ses dernières ont eu.
 
-| url      | nom      |
-| ---      | ---      |
-| /        | Homepage |
-| /team    | Team     |
-
-## Command line pour démarrer le projet
-
-### Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-## Documentation
-
-https://vuejs.org/
-
-https://router.vuejs.org/
-
-https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf
-
-https://marozed.ma/vue-cheatsheet/
-
+Ce projet est réalisé à l'aide de VueJs, Scss, Php et utilise une Api que nous devons nous même créer.
+Nous devons également y ajouter un back-office.

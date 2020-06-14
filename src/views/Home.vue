@@ -12,7 +12,7 @@
 
     <div class="video-overlay">
         <h1>Des hommes et des femmes au services de la France </h1>
-        <p>Les deux plus grandes guerres de l'histoire causer la mort de millions de personnes, découvrez ici l'impact de ses pertes en France.</p>
+        <p>Les deux plus grandes guerres de l'histoire causer la mort de millions de personnes, découvrez ici l'impact de ces pertes en France.</p>
         <router-link class="Discover__btn" to="/Summary">Découvrir</router-link>
         <button class="sound__btn" @click="toggle">1</button>
     </div>
@@ -20,9 +20,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   methods: {
     toggle: function() {

@@ -1,18 +1,10 @@
 <template>
   <div id="app">
-    <Header />
     <router-view/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/partials/Header.vue'
-
-export default {
-  components: {
-    Header
-  }
-}
 </script>
 
 <style lang="scss">
@@ -27,6 +19,7 @@ export default {
  body {
    margin: 0;
    padding: 0;
+   background-color: #181818;
  }
 
 </style>

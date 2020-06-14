@@ -53,7 +53,6 @@
     }
 
     .summary__FirstPart {
-      background-color: red;
       height: calc(100% - 100px);
       width: 50%;
       background: url(../assets/Img/trench-scene-bg-FirstPart1-compress.jpg) no-repeat; 
