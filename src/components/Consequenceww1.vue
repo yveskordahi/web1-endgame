@@ -10,7 +10,7 @@
       <div class="container">
 
         <ul class="timeline">
-          <li>
+          <li vue-scroll-reveal>
             <h3>Impact démographique</h3>
             <p>Les pertes humaines de la 1ère guerre mondiale ont entraîné : <br>
               - un <span class="span_important"> déséquilibre</span> entre les sexes au profit du sexe féminin <br>
