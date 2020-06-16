@@ -17,7 +17,6 @@
 </template>
   
 <script>
-// import * as am4charts from "@amcharts/amcharts4/charts";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
@@ -37,37 +36,6 @@ am4core.useTheme(am4themes_animated);
     var chart = am4core.create("chartdiv", am4maps.MapChart);
     
     var mapData = [
-      // { "id":"DZ", "name":"Algeria", "value":28000, "color":chart.colors.getIndex(2) },
-      // { "id":"AM", "name":"Armenia", "value":1000000, "color":chart.colors.getIndex(1) },
-      // { "id":"AU", "name":"Australia", "value":61928, "color":"#8aabb0" },
-      // { "id":"AT", "name":"Austria-Hungary", "value":1567000, "color":chart.colors.getIndex(1) },
-      // { "id":"BE", "name":"Belgium", "value":104987, "color":chart.colors.getIndex(1) },
-      // { "id":"BG", "name":"Bulgaria", "value":187000, "color":chart.colors.getIndex(1) },
-      // { "id":"CA", "name":"Canada", "value":66944, "color":chart.colors.getIndex(4) },
-      // { "id":"DK", "name":"Denmark", "value":722, "color":chart.colors.getIndex(1) },
-      // { "id":"FR", "name":"France", "value":1697800, "color":chart.colors.getIndex(1) },
-      // { "id":"DE", "name":"Germany", "value":2462897, "color":chart.colors.getIndex(1) },
-      // { "id":"GR", "name":"Greece", "value":176000 , "color":chart.colors.getIndex(1) },
-      // { "id":"IT", "name":"Italia", "value":1240010 , "color":chart.colors.getIndex(1) },
-      // { "id":"IN", "name":"british India", "value":74000 , "color":chart.colors.getIndex(1) },
-      // { "id":"JP", "name":"Japan", "value":14000 , "color": chart.colors.getIndex(0) },
-      // { "id":"LU", "name":"Luxembourg", "value":0, "color":chart.colors.getIndex(1) },
-      // { "id":"ME", "name":"Montenegro", "value":3000, "color":chart.colors.getIndex(1) },
-      // { "id":"MA", "name":"Morocco", "value":12000, "color":chart.colors.getIndex(2) },
-      // { "id":"NZ", "name":"New Zealand", "value":18050, "color":"#8aabb0" },
-      // { "id":"NO", "name":"Norway", "value":1892, "color":chart.colors.getIndex(1) },
-      // { "id":"PL", "name":"Poland", "value":1130000, "color":chart.colors.getIndex(1) },
-      // { "id":"PT", "name":"Portugal", "value":89222 , "color":chart.colors.getIndex(1) },
-      // { "id":"RO", "name":"Romania", "value":680000 , "color":chart.colors.getIndex(1) },
-      // { "id":"RU", "name":"Russia", "value":3311000 , "color":chart.colors.getIndex(1) },
-      // { "id":"SN", "name":"Senegal", "value":30000, "color":chart.colors.getIndex(2) },
-      // { "id":"RS", "name":"Serbia", "value":1250000, "color":chart.colors.getIndex(1) },
-      // { "id":"ZA", "name":"South Africa", "value":9463, "color":chart.colors.getIndex(2) },
-      // { "id":"SE", "name":"Sweden", "value":877, "color":chart.colors.getIndex(1) },
-      // { "id":"TN", "name":"Tunisia", "value":10500, "color":chart.colors.getIndex(2) },
-      // { "id":"TR", "name":"Empire Ottoman", "value":5000000, "color":chart.colors.getIndex(1) },
-      // { "id":"GB", "name":"United Kingdom", "value":994138, "color":chart.colors.getIndex(1) },
-      // { "id":"US", "name":"United States", "value":117465, "color":chart.colors.getIndex(4) }
   { "id":"AL", "name":"Albania", "value":30000, "color":chart.colors.getIndex(1) },
   { "id":"DZ", "name":"Algeria", "value":5000, "color":chart.colors.getIndex(2) },
   { "id":"AM", "name":"Armenia", "value":180000, "color":chart.colors.getIndex(1) },
@@ -114,16 +82,13 @@ am4core.useTheme(am4themes_animated);
   { "id":"TM", "name":"Turkmenistan", "value":100000, "color": chart.colors.getIndex(0) },
   { "id":"GB", "name":"United Kingdom", "value":450900, "color":chart.colors.getIndex(1) },
   { "id":"US", "name":"United States", "value":418500, "color":chart.colors.getIndex(4) },
-  { "id":"UZ", "name":"Uzbekistan", "value":550000, "color": chart.colors.getIndex(0) },
+  { "id":"UZ", "name":"Uzbekistan", "value":550000, "color": chart.colors.getIndex(0) }
     ];
     
-    // Set map definition
     chart.geodata = am4geodata_worldLow;
     
-    // Set projection
     chart.projection = new am4maps.projections.Miller();
     
-    // Create map polygon series
     var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
     polygonSeries.exclude = ["AQ"];
     polygonSeries.useGeodata = true;
@@ -167,8 +132,7 @@ am4core.useTheme(am4themes_animated);
        }
        return longitude;
     })
-    // }); // end am4core.ready()
-      }
+    }
 }
 </script>
   
