@@ -97,6 +97,7 @@ h1 {
       color: #b6b6b6;
       opacity: 0;
       animation: opacity 2s ease .3s forwards;
+      width: 100%;
 
       @media screen and (max-width: 1450px) {
           width: 75%;

@@ -22,7 +22,7 @@
           <router-link class="items__link" to="/archives">Archives</router-link>
         </div>
         <div class="items__setting">
-          <a class="items__link" href="#">A propos</a>
+          <router-link class="items__link" to="/about">A propos</router-link>
           <a class="items__link" href="#">Fr</a>
           <a class="items__link" href="#"><img class="icon_sound" src="../assets/Img/icon_sound.svg" alt="icon sound"></a>
         </div>

@@ -5,6 +5,7 @@ import FirstWorldWar from '../views/FirstWorldWar.vue'
 import Summary from '../views/summary.vue'
 import SecondWorldWar from '../views/SecondWorldWar.vue'
 import archives from '../views/archives.vue'
+import about from '../views/about.vue'
 
 import Summaryww1 from '@/components/Summaryww1.vue';
 import MapWW1 from '@/components/MapWW1.vue';
@@ -39,6 +40,11 @@ const routes = [
     path: '/summary',
     name: 'Summary',
     component: Summary
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: about
   },
   {
     path: '/SecondWorldWar',

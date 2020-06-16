@@ -4,17 +4,17 @@
         <video autoplay muted loop>
             <source src="../assets/Video/vid.mp4" type="video/mp4">
         </video>
-        <audio id="background_audio" autoplay>
+        <!-- <audio id="background_audio" autoplay>
             <source src="../assets/Sound/WorldWar.mp3" type="audio/mp3">
             If you are reading this, it is because your browser does not support the audio element.
-        </audio>
+        </audio> -->
     </div>
 
     <div class="video-overlay">
         <h1>Des hommes et des femmes au services de la France </h1>
         <p>Les deux plus grandes guerres de l'histoire causer la mort de millions de personnes, découvrez ici l'impact de ces pertes en France.</p>
         <router-link class="Discover__btn" to="/Summary">Découvrir</router-link>
-        <button class="sound__btn" @click="toggle">1</button>
+        <!-- <button class="sound__btn" @click="toggle">1</button> -->
     </div>
   </div>
 </template>

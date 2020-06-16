@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="arrow_sliderbattle">
-    <router-link class="items__link" to="/MapFranceww2"><img class="next__page-arrow"  src="../../assets/Img/back.svg" alt="arrow"></router-link>
+    <router-link class="items__link" to="/SecondWorldWar"><img class="next__page-arrow"  src="../../assets/Img/back.svg" alt="arrow"></router-link>
     <router-link class="items__link" to="/AgeSoldierww2"><img class="next__page-arrow"  src="../../assets/Img/next.svg" alt="arrow"></router-link>
     </div>
     </div>
@@ -97,6 +97,7 @@
       color: #b6b6b6;
       opacity: 0;
       animation: opacity 2s ease .3s forwards;
+      width: 100%;
 
       @media screen and (max-width: 1450px) {
           width: 75%;

@@ -17,7 +17,7 @@
               </p>
               <div class="arrow_sliderbattle">
                 <router-link class="items__link" to="/MapWW1"><img class="next__page-arrow"  src="../../assets/Img/back.svg" alt="arrow"></router-link>
-                <router-link class="items__link" to="/MapFranceww2"><img class="next__page-arrow"  src="../../assets/Img/next.svg" alt="arrow"></router-link>
+                <router-link class="items__link" to="/Slider_battleww2"><img class="next__page-arrow"  src="../../assets/Img/next.svg" alt="arrow"></router-link>
               </div>
         </div>
       </div>
