@@ -1,35 +1,32 @@
 <template>
   <div>
-    <div class="background__img">
-      <h1>La 1ère Guerre Mondiale</h1>
-    </div>
     <Summaryww1/>
-    <MapFranceww1 msg="Les pertes militaires par régions françaises"/>
+    <!-- <MapFranceww1 msg="Les pertes militaires par régions françaises"/>
     <Slider_battleww1 msg="Les pertes des grandes batailles de la première guerre mondiale"/>
     <AgeSoldier msg="35% des morts parmi la “classe 14”"/>
     <Consequenceww1 msg="L’impact de ces pertes sur la France"/>
     <Slider_colonieSoldier msg="Les pertes issus de colonies françaises"/>
-    <MapWW1 msg="Les pertes de la première guerre mondiale dans le monde"/>
+    <MapWW1 msg="Les pertes de la première guerre mondiale dans le monde"/> -->
   </div>
 </template>
 
 <script>
 import Summaryww1 from '@/components/Summaryww1.vue';
-import MapWW1 from '@/components/MapWW1.vue';
-import MapFranceww1 from '@/components/MapFranceww1.vue';
-import Slider_battleww1 from '@/components/Slider_battleww1.vue';
-import AgeSoldier from '@/components/AgeSoldier.vue';
-import Consequenceww1 from '@/components/Consequenceww1.vue';
-import Slider_colonieSoldier from '@/components/Slider_colonieSoldier.vue';
+// import MapWW1 from '@/components/MapWW1.vue';
+// import MapFranceww1 from '@/components/MapFranceww1.vue';
+// import Slider_battleww1 from '@/components/Slider_battleww1.vue';
+// import AgeSoldier from '@/components/AgeSoldier.vue';
+// import Consequenceww1 from '@/components/Consequenceww1.vue';
+// import Slider_colonieSoldier from '@/components/Slider_colonieSoldier.vue';
 export default {
   components: {
-    Summaryww1,
-    MapWW1,
-    MapFranceww1,
-    Slider_battleww1,
-    AgeSoldier,
-    Consequenceww1,
-    Slider_colonieSoldier
+    Summaryww1
+    // MapWW1,
+    // MapFranceww1,
+    // Slider_battleww1,
+    // AgeSoldier,
+    // Consequenceww1,
+    // Slider_colonieSoldier
   }
 }
 </script>
@@ -45,6 +42,18 @@ export default {
       opacity: 1;
     }
   }
+
+  h1 {
+  padding: 15px;
+  margin: 0;
+  color: white;
+  opacity: 0;
+  animation: opacity 2s ease .3s forwards;
+
+  @media screen and (max-width: 600px) {
+    font-size: 25px
+  }
+}
   
   .background__img {
     background: url(../assets/Img/Baitaille-de-la-somme3.jpg) center no-repeat ; 

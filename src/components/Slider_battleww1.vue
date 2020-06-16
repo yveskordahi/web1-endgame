@@ -1,6 +1,7 @@
 <template>
     <div class="SliderBattleWW1">
       <h1>{{ msg }}</h1>
+      <h1>Les pertes des grandes batailles de la première guerre mondiale</h1>
       <div class="subtitle">
         <p class="subtitle__info">La plupart des batailles les plus importantes eurent lieu sur le Front de l’Est.</p>
       </div>
@@ -48,7 +49,11 @@
                 </li>
             </ol>
         </div>
-    </div>  
+    </div>
+    <div class="arrow_sliderbattle">
+    <router-link class="items__link" to="/MapFranceww1"><img class="next__page-arrow"  src="../assets/Img/back.svg" alt="arrow"></router-link>
+    <router-link class="items__link" to="/AgeSoldier"><img class="next__page-arrow"  src="../assets/Img/next.svg" alt="arrow"></router-link>
+    </div>
     </div>
   </template>
   
@@ -72,7 +77,7 @@ h1 {
         padding: 15px;
         color: white;
         margin-bottom: 0;
-        margin-top: 30px;
+        margin-top: 10px;
 
         @media screen and (max-width: 600px) {
             font-size: 22px
@@ -148,6 +153,8 @@ h1 {
     box-shadow: 0px 1px 6px rgba(240, 240, 240, 0.64);
     margin-top: 26px;
     width: 700px;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
 
     @media screen and (max-width: 800px) {
       width: 90%;
@@ -263,5 +270,22 @@ h1 {
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
+
+.arrow_sliderbattle {
+  display: flex;
+  margin-top: 20px;
+}
+
+.items__link {
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
+  }
+
+  .next__page-arrow {
+    width: 30px;
+    padding: 10px;
+  }
   </style>
   

@@ -1,12 +1,15 @@
 <template>
     <div class="AgeSoldier">
       <h1>{{ msg }}</h1>
+      <h1>35% des morts parmi la “classe 14</h1>
       <div class="subtitle">
         <p class="subtitle__info">La guerre 14-18 a surtout fauché toute une génération d’hommes qui avaient une vingtaine d’années au moment de l’entrée en guerre. </p>
       </div>
       <div class="chartAgeSoldier__container">
         <div id="chartdivAgeSoldier"></div>
       </div>
+      <router-link class="items__link" to="/Slider_battleww1"><img class="next__page-arrow"  src="../assets/Img/back.svg" alt="arrow"></router-link>
+    <router-link class="items__link" to="/Consequenceww1"><img class="next__page-arrow"  src="../assets/Img/next.svg" alt="arrow"></router-link>
     </div>
 </template>
   
@@ -98,6 +101,8 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 .chartAgeSoldier__container {
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: opacity 1.5s ease .3s forwards;
 }
 
 #chartdivAgeSoldier {
@@ -145,4 +150,16 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
       }
     }
 }
+
+.items__link {
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
+  }
+
+  .next__page-arrow {
+    width: 30px;
+    padding: 10px;
+  }
 </style>

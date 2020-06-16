@@ -1,6 +1,7 @@
 <template>
     <div class="Consequenceww1">
         <h1>{{ msg }}</h1>
+        <h1>L’impact de ces pertes sur la France</h1>
       <div class="subtitle">
         <p class="subtitle__info">Ce bilan humain a des conséquences démographiques importantes au lendemain de la guerre, avec une surmortalité liée au conflit. 
           Un déficit de la natalité s’observe vingt ans plus tard, 
@@ -97,10 +98,10 @@
             <img src="../assets/Img/femmes_tram.jpg" alt="femmes des villes de la ww1">
             </p>
           </li>
-          <hr class="hr__end">
         </ul>
       </div>
-      
+      <router-link class="items__link" to="/AgeSoldier"><img class="next__page-arrow"  src="../assets/Img/back.svg" alt="arrow"></router-link>
+      <router-link class="items__link" to="/Slider_colonieSoldier"><img class="next__page-arrow"  src="../assets/Img/next.svg" alt="arrow"></router-link>
     </div>
   </template>
 
@@ -131,7 +132,6 @@
         }
     }
       .Consequenceww1 {
-          margin-top: 60px;
           box-sizing: border-box;
       }
 
@@ -139,7 +139,10 @@
         padding: 15px;
         color: white;
         margin-bottom: 0;
-        margin-top: 100px;
+        margin-top: 10px;
+        opacity: 0;
+        animation: opacity 2s ease .3s forwards;
+
 
         @media screen and (max-width: 600px) {
             font-size: 22px;
@@ -185,6 +188,8 @@
 .container {
 	max-width:800px;
 	margin:50px auto;
+  opacity: 0;
+  animation: opacity 2s ease .3s forwards;
 }
 
 .timeline{
@@ -256,5 +261,18 @@
 .hr__end {
   width: 90%;
 }
+
+.items__link {
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
+  }
+
+  .next__page-arrow {
+    width: 52px;
+    padding: 10px;
+    margin-bottom: 35px;
+  }
   </style>
   

@@ -1,8 +1,9 @@
 <template>
   <div class="MapFrance">
     <h1>{{ msg }}</h1>
+    <h1>Les pertes militaires par régions françaises</h1>
     <div class="subtitle">
-      <p class="subtitle__info">Une grande partie des soldats tués durant la prmeière guerre mondiale sont morts dans la Marne, la Meuse, l'Aisne et la Somme. </p>
+      <p class="subtitle__info">Une grande partie des soldats tués durant la première guerre mondiale sont morts dans la Marne, la Meuse, l'Aisne et la Somme. </p>
     </div>
     <div class="map" id="map">
       <div class="map__image">
@@ -78,6 +79,8 @@
         </svg>
       </div>
     </div>
+    <router-link class="items__link" to="/FirstWorldWar"><img class="next__page-arrow"  src="../assets/Img/back.svg" alt="arrow"></router-link>
+    <router-link class="items__link" to="/Slider_battleww1"><img class="next__page-arrow"  src="../assets/Img/next.svg" alt="arrow"></router-link>
   </div>
 </template>
 
@@ -92,13 +95,15 @@ export default {
 
 <style scoped lang="scss">
 .MapFrance {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 h1 {
   padding: 15px;
   margin: 0;
   color: white;
+  opacity: 0;
+  animation: opacity 2s ease .3s forwards;
 
   @media screen and (max-width: 600px) {
     font-size: 25px
@@ -136,10 +141,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
   }
 
   .map__image {
-    width: 40%;
+    width: 36%;
 
     @media screen and (max-width: 600px) {
       width: 70%;
@@ -182,5 +189,17 @@ h1 {
         }
       }
     }
+  }
+
+  .items__link {
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
+  }
+
+  .next__page-arrow {
+    width: 30px;
+    padding: 10px;
   }
 </style>

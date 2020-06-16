@@ -1,6 +1,7 @@
 <template>
     <div class="WorldMapww1">
       <h1>{{ msg }}</h1>
+      <h1>Les pertes de la première guerre mondiale dans le monde</h1>
       <div class="subtitle">
         <p class="subtitle__info">Les pertes humaines de la Première Guerre mondiale s'élèvent à environ 18,6 millions de morts. 
           Ce nombre inclut 9,7 millions de morts pour les militaires et 8,9 millions pour les civils. 
@@ -9,6 +10,8 @@
     <div class="mapww1__container">
       <div id="chartdiv"></div>
     </div>
+    <router-link class="items__link" to="/Slider_colonieSoldier"><img class="next__page-arrow"  src="../assets/Img/back.svg" alt="arrow"></router-link>
+    <router-link class="items__link" to="/SecondWorldWar"><img class="next__page-arrow"  src="../assets/Img/next.svg" alt="arrow"></router-link>
     </div>
 </template>
   
@@ -127,7 +130,8 @@ am4core.useTheme(am4themes_animated);
   padding: 15px;
   color: white;
   margin-bottom: 0;
-  margin-top: 50px;
+  opacity: 0;
+  animation: opacity 2s ease .3s forwards;
 
   @media screen and (max-width: 600px) {
     font-size: 22px;
@@ -170,11 +174,24 @@ am4core.useTheme(am4themes_animated);
     width: 85%;
     height: 600px;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
 
     @media screen and (max-width: 1250px) {
       margin-top: 0px;
       width: 90%;
       height: 300px;
     }
+  }
+
+  .items__link {
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
+  }
+  .next__page-arrow {
+    width: 30px;
+    padding: 10px;
   }
 </style>

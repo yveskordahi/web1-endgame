@@ -42,6 +42,8 @@
     width: 100%;
     position: relative;
     background-color: #181818;
+    opacity: 0;
+    animation: opacity 2s ease .3s forwards;
   }
 
   .summary__container {
