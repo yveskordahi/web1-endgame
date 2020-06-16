@@ -24,7 +24,7 @@
         <div class="items__setting">
           <a class="items__link" href="">A propos</a>
           <a class="items__link" href="">Fr</a>
-          <a class="items__link" href="">Sound</a>
+          <a class="items__link" href=""><img class="icon_sound" src="../assets/Img/icon_sound.svg" alt="icon sound"></a>
         </div>
       </div>
     </div>
@@ -256,6 +256,7 @@
 
       .items__setting {
         margin-right: 30px;
+        display: flex;
 
         @media screen and (max-width: 600px) {
           margin-right: 0px;
@@ -273,5 +274,9 @@
         }
       }
     }
+  }
+
+  .icon_sound {
+    width: 22px;
   }
 </style>
