@@ -13,3 +13,4 @@ guerre mondiale en France, ainsi que l'impact que ces dernières ont eu.
 
 Ce projet est réalisé à l'aide de Hrml, VueJs, Scss, Php et utilise une Api que nous devons nous même créer.
 Nous devons également y ajouter un back-office.
+Lien du site: https://worldwarwebdoc.netlify.app/
